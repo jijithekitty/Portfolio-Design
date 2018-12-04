@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Sintony' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<style>
+    header {
+        display: grid;
+        margin: 75px 75px -50px 75px;
+    }
+
+    header .name {
+        margin: auto;
+        font-family: Sintony, monospace;
+        font-size: 32px;
+    }
+
+    header .tabs button {
+        border: 0;
+        padding: 10px 10px;
+        background: transparent;
+        font-size: 16px;
+        font-family: Open Sans, monospace;
+    }
+
+    header .tabs button:hover {
+        color: #aaaaaa;
+        transition: 0.3s;
+    }
+
+    header .tabs {margin: auto;}
+    
+    .text {
+        color: #000000;
+        font-size: 48px;
+        font-family: Sintony, monospace;
+        position: relative;
+        top: 45%;
+        text-align: center;
+        opacity: 0;
+    }
+    .subtext {
+        color: #aaaaaa;
+        font-size: 16px;
+        font-family: Sintony, monospace;
+        position: relative;
+        top: 45%;
+        text-align: center;
+        opacity: 0;
+    }
+
+    .project1 {
+        background-image: url(https://images.unsplash.com/photo-1527903825799-197bab1e7550?ixlib=rb-0.3.5&s=fd76e84ada7072d535cff8891465549e&auto=format&fit=crop&w=1350&q=80);
+        background-size: cover, contain;
+    }
+    .project2 {
+        background-image: url(https://images.unsplash.com/photo-1527904219733-fddc74937915?ixlib=rb-0.3.5&s=cf920ce400c9ee4fa845fa68d3027e53&auto=format&fit=crop&w=1350&q=80);
+        background-size: cover, contain;
+    }
+    .project3 {
+        background-image: url(https://images.unsplash.com/photo-1521798595241-40c394a32c50?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd0e0136a67d982cf29b0abe2c428c0f&auto=format&fit=crop&w=1349&q=80);
+        background-size: cover, contain;
+        background-position: center;
+    }
+    .project4 {
+        background-image: url(https://images.unsplash.com/photo-1527903624482-4186b06014b7?ixlib=rb-0.3.5&s=84fdedace887de138476858627916adc&auto=format&fit=crop&w=1343&q=80);
+        background-size: cover;
+        background-position: center;
+    }
+    .project5 {
+        background-image: url(https://images.unsplash.com/photo-1527904248767-cfe951e81ab0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ff427782f4ef8063f45ce874e7e7025a&auto=format&fit=crop&w=1350&q=80);
+        background-position: center;
+    }
+    .project6 {
+        background-image: url(https://images.unsplash.com/photo-1538506392157-218c11f95129?ixlib=rb-0.3.5&s=365f56eb1da182d9847e465819f4eb9e&auto=format&fit=crop&w=1251&q=80);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .project1:hover {background: #FFFFFF;}
+    .project1:hover .text {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+    .project1:hover .subtext {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+
+    .project2:hover {background: #FFFFFF;}
+    .project2:hover .text {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+    .project2:hover .subtext {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+
+    .project3:hover {background: #FFFFFF;}
+    .project3:hover .text {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+    .project3:hover .subtext {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+
+    .project4:hover {background: #FFFFFF;}
+    .project4:hover .text {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+    .project4:hover .subtext {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+
+    .project5:hover {background: #FFFFFF;}
+    .project5:hover .text {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+    .project5:hover .subtext {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+
+    .project6:hover {background: #FFFFFF;}
+    .project6:hover .text {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+    .project6:hover .subtext {
+        opacity: 1; 
+        transition: 0.3s;
+        transition-timing-function: ease-in;
+    }
+
+    .container {
+        display: grid;
+        margin: 75px;
+        min-height: 1600px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 25px;
+    }
+</style>
+
+<header>
+    <h3 class = "name">Jenny Nguyen</h3>
+    <div class = "tabs">
+        <button class = "work">Work</button>
+        <button class = "about">About</button>
+        <button class = "contact">Contact</button>
+    </div>
+</header>
+
+<div class = "container">
+    <div class = "project1">
+        <div class = "text">Hello</div>
+        <div class = "subtext">World</div>
+    </div>
+    <div class = "project2">
+        <div class = "text">Hello</div>
+        <div class = "subtext">World</div>
+    </div>
+    <div class = "project3">
+        <div class = "text">Hello</div>
+        <div class = "subtext">World</div>
+    </div>
+    <div class = "project4">
+        <div class = "text">Hello</div>
+        <div class = "subtext">World</div>
+    </div>
+    <div class = "project5">
+        <div class = "text">Hello</div>
+        <div class = "subtext">World</div>
+    </div>
+    <div class = "project6">
+        <div class = "text">Hello</div>
+        <div class = "subtext">World</div>
+    </div>
+</div>
+
+</html>
